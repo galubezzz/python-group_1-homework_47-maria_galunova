@@ -7,11 +7,11 @@
 <body>
 	<div id="container"></div>
 	<script type="application/javascript">
-		function poebota(){
-			let ebanaya_huinya = document.getElementById("container");
-			ebanaya_huinya.innerHTML = ebanaya_huinya.innerHTML + '<div class="element">' + Math.floor((Math.random() * 20) + 1) + '</div>';
+		function createElement(){
+			let container = document.getElementById("container");
+			container.innerHTML = container.innerHTML + '<div class="element">' + Math.floor((Math.random() * 20) + 1) + '</div>';
 		}
-		let timerId = setInterval(poebota, 5000);
+		let timerId = setInterval(createElement, 5000);
 
 		setTimeout(function() {
 			clearInterval(timerId);
